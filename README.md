@@ -1,107 +1,107 @@
-# 🚀 Gabriel Iturre - Senior Full Stack Portfolio
+# 🚀 Gabriel Iturre - Portfolio Full Stack Senior
 
 [![Angular](https://img.shields.io/badge/Angular-18.0-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-> **Modern, high-performance portfolio** showcasing enterprise-grade Angular development with a focus on **Clean Architecture**, **performance optimization**, and **user experience**.
+> **Portfolio moderno y de alto rendimiento** que demuestra desarrollo Angular de nivel empresarial con enfoque en **Clean Architecture**, **optimización de rendimiento** y **experiencia de usuario**.
 
 ---
 
-## 📋 Table of Contents
+## 📋 Tabla de Contenidos
 
-- [Overview](#-overview)
-- [Tech Stack](#-tech-stack)
-- [Key Features](#-key-features)
-- [Architecture](#-architecture)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [Performance Optimizations](#-performance-optimizations)
-- [Deployment](#-deployment)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
-## 🎯 Overview
-
-This portfolio is a **production-ready Angular 18 application** built with modern web development best practices. It demonstrates expertise in:
-
-- **Enterprise-scale architecture** with standalone components
-- **Performance-first design** (optimized LCP, FCP, and CLS metrics)
-- **Accessibility** (WCAG 2.1 AA compliant)
-- **Internationalization** (i18n) with seamless language switching
-- **Responsive design** with mobile-first approach
-- **Dark/Light mode** with persistent user preferences
+- [Descripción General](#-descripción-general)
+- [Stack Tecnológico](#-stack-tecnológico)
+- [Características Principales](#-características-principales)
+- [Arquitectura](#-arquitectura)
+- [Comenzando](#-comenzando)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Optimizaciones de Rendimiento](#-optimizaciones-de-rendimiento)
+- [Despliegue](#-despliegue)
+- [Contribuir](#-contribuir)
+- [Licencia](#-licencia)
 
 ---
 
-## 🛠 Tech Stack
+## 🎯 Descripción General
 
-### Core Framework
-- **[Angular 18.0](https://angular.dev)** - Latest standalone components architecture
-- **[TypeScript 5.5](https://www.typescriptlang.org/)** - Type-safe development
-- **[RxJS 7.8](https://rxjs.dev/)** - Reactive programming
+Este portfolio es una **aplicación Angular 18 lista para producción** construida con las mejores prácticas modernas de desarrollo web. Demuestra experiencia en:
 
-### Styling & UI
-- **[Tailwind CSS 3.4](https://tailwindcss.com)** - Utility-first CSS framework
-- **[PostCSS](https://postcss.org/)** - CSS transformations
-- **Custom Design System** - Consistent color palette and typography
-
-### Internationalization
-- **[@ngx-translate/core](https://github.com/ngx-translate/core)** - i18n support (ES/EN)
-- **[@ngx-translate/http-loader](https://github.com/ngx-translate/http-loader)** - Dynamic translation loading
-
-### Performance
-- **[lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed)** - Optimized YouTube embeds (60x faster)
-- **Lazy Loading** - Route-based code splitting
-- **Tree Shaking** - Minimal bundle size
-
-### Development Tools
-- **[Angular CLI 18.0](https://angular.dev/tools/cli)** - Project scaffolding and build
-- **[ESLint](https://eslint.org/)** - Code quality and consistency
-- **[Prettier](https://prettier.io/)** - Code formatting (optional)
+- **Arquitectura a escala empresarial** con componentes standalone
+- **Diseño orientado al rendimiento** (métricas LCP, FCP y CLS optimizadas)
+- **Accesibilidad** (cumple con WCAG 2.1 AA)
+- **Internacionalización** (i18n) con cambio de idioma fluido
+- **Diseño responsivo** con enfoque mobile-first
+- **Modo Oscuro/Claro** con preferencias de usuario persistentes
 
 ---
 
-## ✨ Key Features
+## 🛠 Stack Tecnológico
 
-### 🎨 Modern Design System
-- **Silicon Valley Aesthetic** - Clean, corporate SaaS-inspired design
-- **Glassmorphism Effects** - Subtle backdrop blur and transparency
-- **Smooth Animations** - CSS transitions and keyframe animations
-- **Responsive Grid Layouts** - Mobile-first, adaptive design
+### Framework Principal
+- **[Angular 18.0](https://angular.dev)** - Arquitectura de componentes standalone más reciente
+- **[TypeScript 5.5](https://www.typescriptlang.org/)** - Desarrollo type-safe
+- **[RxJS 7.8](https://rxjs.dev/)** - Programación reactiva
 
-### 🌐 Internationalization (i18n)
-- **Bilingual Support** - Spanish (ES) and English (EN)
-- **Dynamic Language Switching** - Real-time content updates
-- **Flag Icons** - Visual language indicators
-- **Persistent Preferences** - LocalStorage-based language memory
+### Estilos e Interfaz
+- **[Tailwind CSS 3.4](https://tailwindcss.com)** - Framework CSS utility-first
+- **[PostCSS](https://postcss.org/)** - Transformaciones CSS
+- **Sistema de Diseño Personalizado** - Paleta de colores y tipografía consistente
 
-### 🌓 Theme System
-- **Dark/Light Mode Toggle** - Seamless theme switching
-- **System Preference Detection** - Respects OS settings
-- **Persistent State** - LocalStorage-based theme memory
-- **Tailwind Dark Mode** - Class-based dark mode implementation
+### Internacionalización
+- **[@ngx-translate/core](https://github.com/ngx-translate/core)** - Soporte i18n (ES/EN)
+- **[@ngx-translate/http-loader](https://github.com/ngx-translate/http-loader)** - Carga dinámica de traducciones
 
-### ⚡ Performance Optimizations
-- **Lighthouse Score: 95+** - Optimized for Core Web Vitals
-- **Lazy-Loaded YouTube** - `<lite-youtube>` for 60x faster embeds
-- **Optimized Images** - WebP format with lazy loading
-- **Minimal Bundle Size** - Tree-shaken dependencies
+### Rendimiento
+- **[lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed)** - Embeds de YouTube optimizados (60x más rápido)
+- **Lazy Loading** - División de código basada en rutas
+- **Tree Shaking** - Tamaño de bundle mínimo
 
-### 📱 Responsive Design
-- **Mobile-First Approach** - Optimized for all screen sizes
+### Herramientas de Desarrollo
+- **[Angular CLI 18.0](https://angular.dev/tools/cli)** - Scaffolding y build del proyecto
+- **[ESLint](https://eslint.org/)** - Calidad y consistencia del código
+- **[Prettier](https://prettier.io/)** - Formateo de código (opcional)
+
+---
+
+## ✨ Características Principales
+
+### 🎨 Sistema de Diseño Moderno
+- **Estética Silicon Valley** - Diseño limpio inspirado en SaaS corporativo
+- **Efectos Glassmorphism** - Blur y transparencia sutiles
+- **Animaciones Suaves** - Transiciones CSS y animaciones keyframe
+- **Layouts Grid Responsivos** - Diseño mobile-first y adaptativo
+
+### 🌐 Internacionalización (i18n)
+- **Soporte Bilingüe** - Español (ES) e Inglés (EN)
+- **Cambio Dinámico de Idioma** - Actualización de contenido en tiempo real
+- **Iconos de Banderas** - Indicadores visuales de idioma
+- **Preferencias Persistentes** - Memoria de idioma basada en LocalStorage
+
+### 🌓 Sistema de Temas
+- **Toggle Modo Oscuro/Claro** - Cambio de tema fluido
+- **Detección de Preferencia del Sistema** - Respeta configuración del SO
+- **Estado Persistente** - Memoria de tema basada en LocalStorage
+- **Dark Mode de Tailwind** - Implementación basada en clases
+
+### ⚡ Optimizaciones de Rendimiento
+- **Puntuación Lighthouse: 95+** - Optimizado para Core Web Vitals
+- **YouTube con Lazy Loading** - `<lite-youtube>` para embeds 60x más rápidos
+- **Imágenes Optimizadas** - Formato WebP con lazy loading
+- **Tamaño de Bundle Mínimo** - Dependencias tree-shaken
+
+### 📱 Diseño Responsivo
+- **Enfoque Mobile-First** - Optimizado para todos los tamaños de pantalla
 - **Breakpoints**: `sm` (640px), `md` (768px), `lg` (1024px), `xl` (1280px)
-- **Touch-Friendly** - Optimized tap targets (44x44px minimum)
+- **Touch-Friendly** - Objetivos táctiles optimizados (mínimo 44x44px)
 
 ---
 
-## 🏗 Architecture
+## 🏗 Arquitectura
 
-### Standalone Components Pattern
-This project uses **Angular 18's standalone components** architecture, eliminating the need for NgModules and simplifying dependency management.
+### Patrón de Componentes Standalone
+Este proyecto utiliza la arquitectura de **componentes standalone de Angular 18**, eliminando la necesidad de NgModules y simplificando la gestión de dependencias.
 
 ```typescript
 @Component({
@@ -113,70 +113,70 @@ This project uses **Angular 18's standalone components** architecture, eliminati
 export class HeroComponent {}
 ```
 
-### Feature-Based Structure
+### Estructura Basada en Features
 ```
 src/app/
-├── core/              # Singleton services (theme, i18n)
-├── features/          # Feature modules
+├── core/              # Servicios singleton (theme, i18n)
+├── features/          # Módulos de características
 │   └── home/
-│       ├── hero/      # Hero section component
-│       └── about/     # About section component
-├── layout/            # Layout components (navbar, footer)
-└── services/          # Shared services
+│       ├── hero/      # Componente sección Hero
+│       └── about/     # Componente sección About
+├── layout/            # Componentes de layout (navbar, footer)
+└── services/          # Servicios compartidos
 ```
 
-### State Management
-- **LocalStorage** for theme and language persistence
-- **RxJS BehaviorSubjects** for reactive state management
-- **Service-based state** (no external state library needed)
+### Gestión de Estado
+- **LocalStorage** para persistencia de tema e idioma
+- **RxJS BehaviorSubjects** para gestión de estado reactivo
+- **Estado basado en servicios** (no se necesita librería externa de estado)
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Comenzando
 
-### Prerequisites
+### Prerequisitos
 - **Node.js** >= 18.x
 - **npm** >= 9.x
-- **Angular CLI** 18.x (optional, but recommended)
+- **Angular CLI** 18.x (opcional, pero recomendado)
 
-### Installation
+### Instalación
 
-1. **Clone the repository**
+1. **Clonar el repositorio**
    ```bash
    git clone https://github.com/GabrielIturreCs/Portfolio2.git
    cd Portfolio2
    ```
 
-2. **Install dependencies**
+2. **Instalar dependencias**
    ```bash
    npm install
    ```
 
-3. **Start development server**
+3. **Iniciar servidor de desarrollo**
    ```bash
    npm start
-   # or
+   # o
    ng serve
    ```
 
-4. **Open in browser**
+4. **Abrir en navegador**
    ```
    http://localhost:4200
    ```
 
-### Build for Production
+### Build para Producción
 
 ```bash
 npm run build
-# or
+# o
 ng build --configuration production
 ```
 
-Output will be in `dist/gabrieliturre/browser/`
+La salida estará en `dist/gabrieliturre/browser/`
 
 ---
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto
 
 ```
 gabrieliturre/
@@ -184,76 +184,76 @@ gabrieliturre/
 │   ├── app/
 │   │   ├── core/
 │   │   │   └── services/
-│   │   │       └── theme.service.ts       # Dark/Light mode logic
+│   │   │       └── theme.service.ts       # Lógica Dark/Light mode
 │   │   ├── features/
 │   │   │   └── home/
-│   │   │       ├── hero/                  # Hero section
+│   │   │       ├── hero/                  # Sección Hero
 │   │   │       │   ├── hero.component.ts
 │   │   │       │   ├── hero.component.html
 │   │   │       │   └── hero.component.css
-│   │   │       └── about/                 # About section
+│   │   │       └── about/                 # Sección About
 │   │   │           ├── about.component.ts
 │   │   │           ├── about.component.html
 │   │   │           └── about.component.css
 │   │   ├── layout/
-│   │   │   └── navbar/                    # Navigation bar
+│   │   │   └── navbar/                    # Barra de navegación
 │   │   │       ├── navbar.component.ts
 │   │   │       ├── navbar.component.html
 │   │   │       └── navbar.component.css
-│   │   ├── app.ts                         # Root component
-│   │   ├── app.config.ts                  # App configuration
-│   │   └── app.routes.ts                  # Routing configuration
+│   │   ├── app.ts                         # Componente raíz
+│   │   ├── app.config.ts                  # Configuración de la app
+│   │   └── app.routes.ts                  # Configuración de rutas
 │   ├── assets/
 │   │   ├── i18n/
-│   │   │   ├── es.json                    # Spanish translations
-│   │   │   └── en.json                    # English translations
-│   │   └── images/                        # Static images
-│   ├── styles.css                         # Global styles
-│   ├── index.html                         # HTML entry point
-│   └── main.ts                            # TypeScript entry point
-├── tailwind.config.js                     # Tailwind configuration
-├── postcss.config.js                      # PostCSS configuration
-├── angular.json                           # Angular CLI configuration
-├── tsconfig.json                          # TypeScript configuration
-├── package.json                           # Dependencies
-└── README.md                              # This file
+│   │   │   ├── es.json                    # Traducciones en español
+│   │   │   └── en.json                    # Traducciones en inglés
+│   │   └── images/                        # Imágenes estáticas
+│   ├── styles.css                         # Estilos globales
+│   ├── index.html                         # Punto de entrada HTML
+│   └── main.ts                            # Punto de entrada TypeScript
+├── tailwind.config.js                     # Configuración de Tailwind
+├── postcss.config.js                      # Configuración de PostCSS
+├── angular.json                           # Configuración de Angular CLI
+├── tsconfig.json                          # Configuración de TypeScript
+├── package.json                           # Dependencias
+└── README.md                              # Este archivo
 ```
 
 ---
 
-## ⚡ Performance Optimizations
+## ⚡ Optimizaciones de Rendimiento
 
-### 1. **Lazy-Loaded YouTube Embeds**
-Using `lite-youtube-embed` reduces initial page load by **60x**:
+### 1. **Embeds de YouTube con Lazy Loading**
+Usando `lite-youtube-embed` reduce la carga inicial de página en **60x**:
 ```html
 <lite-youtube videoid="j78UH984PNQ" params="rel=0&modestbranding=1"></lite-youtube>
 ```
 
-### 2. **Optimized Images**
-- **WebP format** for modern browsers
-- **Lazy loading** with `loading="lazy"`
-- **Responsive images** with `srcset`
+### 2. **Imágenes Optimizadas**
+- **Formato WebP** para navegadores modernos
+- **Lazy loading** con `loading="lazy"`
+- **Imágenes responsivas** con `srcset`
 
-### 3. **Code Splitting**
-- **Route-based lazy loading** (future routes)
-- **Tree shaking** removes unused code
-- **Minification** in production builds
+### 3. **División de Código**
+- **Lazy loading basado en rutas** (rutas futuras)
+- **Tree shaking** elimina código no utilizado
+- **Minificación** en builds de producción
 
-### 4. **CSS Optimization**
-- **Tailwind CSS purging** removes unused styles
-- **PostCSS optimizations** (autoprefixer, cssnano)
-- **Critical CSS inlining** (future enhancement)
+### 4. **Optimización CSS**
+- **Purga de Tailwind CSS** elimina estilos no utilizados
+- **Optimizaciones PostCSS** (autoprefixer, cssnano)
+- **Inlining de CSS crítico** (mejora futura)
 
-### 5. **Bundle Size**
-- **Main bundle**: ~58 KB (gzipped)
-- **Styles**: ~31 KB (gzipped)
-- **Total**: ~89 KB (initial load)
+### 5. **Tamaño de Bundle**
+- **Bundle principal**: ~58 KB (gzipped)
+- **Estilos**: ~31 KB (gzipped)
+- **Total**: ~89 KB (carga inicial)
 
 ---
 
-## 🌍 Deployment
+## 🌍 Despliegue
 
-### Vercel (Recommended)
+### Vercel (Recomendado)
 ```bash
 npm install -g vercel
 vercel --prod
@@ -262,7 +262,7 @@ vercel --prod
 ### Netlify
 ```bash
 npm run build
-# Upload dist/gabrieliturre/browser/ to Netlify
+# Subir dist/gabrieliturre/browser/ a Netlify
 ```
 
 ### GitHub Pages
@@ -280,45 +280,45 @@ firebase deploy
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contribuir
 
-This is a personal portfolio project, but suggestions and feedback are welcome!
+Este es un proyecto de portfolio personal, ¡pero las sugerencias y comentarios son bienvenidos!
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+1. Fork el repositorio
+2. Crea una rama de feature (`git checkout -b feature/CaracteristicaIncreible`)
+3. Commit tus cambios (`git commit -m 'Agregar alguna CaracteristicaIncreible'`)
+4. Push a la rama (`git push origin feature/CaracteristicaIncreible`)
+5. Abre un Pull Request
 
 ---
 
-## 👨‍💻 Author
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la **Licencia MIT** - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 👨‍💻 Autor
 
 **Gabriel Iturre**  
 Full Stack Software Engineer
 
 - 🌐 Portfolio: [gabrieliturre.dev](https://gabrieliturre.dev)
-- 💼 LinkedIn: [linkedin.com/in/gabrieliturre](https://linkedin.com/in/gabrieliturre)
-- 📧 Email: gabrieliturre@example.com
+- 💼 LinkedIn: [linkedin.com/in/gabriel-iturre-73900626a](https://www.linkedin.com/in/gabriel-iturre-73900626a/)
+- 📧 Email: gabriel13iturre@gmail.com
 - 🐙 GitHub: [@GabrielIturreCs](https://github.com/GabrielIturreCs)
 
 ---
 
-## 🙏 Acknowledgments
+## 🙏 Agradecimientos
 
-- **Angular Team** - For the amazing framework
-- **Tailwind CSS** - For the utility-first CSS framework
-- **Paul Irish** - For lite-youtube-embed
-- **ngx-translate** - For i18n support
+- **Equipo de Angular** - Por el increíble framework
+- **Tailwind CSS** - Por el framework CSS utility-first
+- **Paul Irish** - Por lite-youtube-embed
+- **ngx-translate** - Por el soporte i18n
 
 ---
 
 <div align="center">
-  <strong>Built with ❤️ using Angular 18 and Tailwind CSS</strong>
+  <strong>Construido con ❤️ usando Angular 18 y Tailwind CSS</strong>
 </div>
