@@ -1,0 +1,14 @@
+/* Estilos base del link */
+.nav-link {
+    @apply text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-white hover:bg-white dark:hover:bg-slate-700;
+}
+
+/* Estado activo (cuando estás en esa sección) */
+.active-link {
+    @apply text-primary-600 dark:text-white bg-white dark:bg-slate-700 shadow-sm font-semibold;
+}
+
+/* Animación sutil al hacer hover en las banderas */
+button:active {
+    @apply scale-95;
+}

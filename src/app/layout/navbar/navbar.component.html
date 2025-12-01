@@ -1,0 +1,84 @@
+<nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b" [ngClass]="{
+       'bg-slate-900/80 border-slate-800 backdrop-blur-md': themeService.isDark(),
+       'bg-white/80 border-slate-200 backdrop-blur-md': !themeService.isDark()
+     }">
+
+    <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a routerLink="/" class="group flex flex-col justify-center select-none">
+            <span
+                class="text-xl md:text-2xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-primary-500 transition-colors duration-300">
+                Gabriel Iturre
+            </span>
+            <span
+                class="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] text-primary-500 dark:text-primary-400 opacity-90 group-hover:opacity-100 transition-opacity">
+                Full Stack Engineer
+            </span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul
+            class="hidden md:flex items-center space-x-1 p-1 bg-slate-100/50 dark:bg-slate-800/50 rounded-full border border-slate-200/50 dark:border-slate-700/50 backdrop-blur-sm">
+            <li *ngFor="let link of navLinks">
+                <a [routerLink]="['/']" [fragment]="link.fragment"
+                    class="nav-link relative px-5 py-2 text-sm font-medium rounded-full transition-all duration-300"
+                    routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+                    {{ link.label | translate }}
+                </a>
+            </li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-4">
+
+            <!-- Language Switcher -->
+            <div
+                class="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 rounded-full px-1 py-1 border border-slate-200 dark:border-slate-700">
+                <button (click)="switchLang('es')"
+                    class="px-3 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none flex items-center gap-2"
+                    [ngClass]="currentLang() === 'es' ? 'bg-primary-500 text-white shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'">
+                    <img src="assets/images/mundo.png" alt="ES" class="w-5 h-5 object-cover rounded-full">
+                    <span>ES</span>
+                </button>
+
+                <button (click)="switchLang('en')"
+                    class="px-3 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 focus:outline-none flex items-center gap-2"
+                    [ngClass]="currentLang() === 'en' ? 'bg-primary-500 text-white shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'">
+                    <img src="assets/images/estados-unidos.png" alt="EN" class="w-5 h-5 object-cover rounded-full">
+                    <span>EN</span>
+                </button>
+            </div>
+
+            <div class="h-6 w-px bg-slate-200 dark:bg-slate-700 mx-2 hidden sm:block"></div>
+
+            <!-- Theme Toggle -->
+            <button (click)="themeService.toggleTheme()"
+                class="p-2 rounded-full text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 transition-colors focus:outline-none"
+                aria-label="Toggle Theme">
+                <svg *ngIf="!themeService.isDark()" xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-orange-500 rotate-0 transition-transform duration-500" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <svg *ngIf="themeService.isDark()" xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-primary-400 rotate-0 transition-transform duration-500" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="md:hidden ml-2 text-slate-600 dark:text-slate-300 hover:text-primary-500 transition-colors focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+        </div>
+    </div>
+</nav>

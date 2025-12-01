@@ -1,0 +1,27 @@
+{
+    "NAV": {
+        "HOME": "Inicio",
+        "ABOUT": "Sobre Mí",
+        "PROJECTS": "Proyectos",
+        "CONTACT": "Contacto"
+    },
+    "HERO": {
+        "GREETING": "HOLA, SOY",
+        "TITLE": "Full Stack Software Engineer",
+        "SUBTITLE_1": "Desarrollo plataformas escalables con Angular 18+, Node.js y MongoDB, creando soluciones híbridas orientadas a la alta disponibilidad.",
+        "SUBTITLE_2": "Mi enfoque se basa en Clean Architecture y optimización extrema para entornos de alto volumen.",
+        "SUDO_ERP": "Creador de SUDO ERP, una plataforma Offline-First con sincronización en tiempo real.",
+        "CTA_CV": "Descargar CV",
+        "CTA_EMAIL": "Copiar Email"
+    },
+    "ABOUT": {
+        "TITLE": "Mi Filosofía de Ingeniería",
+        "TEXT_1": "Entiendo el desarrollo de software como una herramienta estratégica de negocio, no solo como una tarea técnica. Mi valor diferencial radica en la capacidad de traducir objetivos comerciales en arquitecturas resilientes que escalan con la demanda.",
+        "TEXT_2": "Más allá del código, me enfoco en la mantenibilidad a largo plazo, la optimización de recursos y la experiencia del usuario final. Creo firmemente que un sistema robusto es aquel que funciona de manera invisible y eficiente, permitiendo que el negocio crezca sin fricciones técnicas.",
+        "STATS": {
+            "EXP": "+2 Años Exp",
+            "PROJECTS": "Visión de Producto",
+            "COMMIT": "Alto Rendimiento"
+        }
+    }
+}

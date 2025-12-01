@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'lite-youtube-embed/src/lite-yt-embed.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definir el color primario (un azul más elegante que el neón) */
+:root {
+    --primary-50: #e0f2fe;
+    --primary-100: #bae6fd;
+    --primary-200: #7dd3fc;
+    --primary-300: #38bdf8;
+    --primary-400: #0ea5e9;
+    --primary-500: #0284c7;
+    /* Azul principal */
+    --primary-600: #0369a1;
+    --primary-700: #075985;
+    --primary-800: #0c4a6e;
+    --primary-900: #083344;
+}
+
+/* Estilos base para el modo oscuro */
+html.dark body {
+    @apply bg-slate-900 text-slate-100;
+}
+
+body {
+    @apply bg-white text-slate-900 font-sans;
+    /* Usa una fuente sans-serif moderna como Inter o Roboto */
+}
+
+/* Estilos de Botones Reusables */
+.btn {
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500 shadow-lg shadow-primary-500/30 hover:shadow-primary-500/50 hover:-translate-y-1;
+}
+
+.btn-outline {
+    @apply border-2 border-slate-300 text-slate-700 hover:border-primary-500 hover:text-primary-500 dark:border-slate-600 dark:text-slate-300 dark:hover:border-primary-400 dark:hover:text-primary-400;
+}
+
+/* Configurar Tailwind para usar nuestros colores personalizados */
+@layer base {
+    :root {
+        /* Mapear nuestros colores CSS a variables de Tailwind si es necesario,
+       pero por ahora usamos los colores por defecto de Tailwind (slate, blue) que funcionan bien */
+    }
+}
