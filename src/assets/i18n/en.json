@@ -23,5 +23,23 @@
             "PROJECTS": "Product Vision",
             "COMMIT": "High Performance"
         }
+    },
+    "TECH_STACK": {
+        "TITLE": "Tech Stack & Architecture",
+        "SUBTITLE": "Strategic selection of robust tools to build critical, scalable, and high-performance digital ecosystems.",
+        "FRONTEND": {
+            "TITLE": "Frontend & Desktop Ecosystem",
+            "DESC": "Development of complex reactive interfaces and native desktop applications, focusing on fluid user experience and optimized performance."
+        },
+        "BACKEND": {
+            "TITLE": "Backend & Data Layer",
+            "DESC": "Building robust and scalable APIs. Design of hybrid data schemas (SQL/NoSQL) and use of advanced Aggregations for efficient processing."
+        },
+        "ARCHITECTURE": {
+            "TITLE": "Architecture, DevOps & Security",
+            "DESC": "Quality assurance and operational continuity through decoupled architectures, security strategies (JWT), and resilient synchronization for critical environments.",
+            "BADGE_1": "Clean Architecture",
+            "BADGE_2": "Offline-First Patterns"
+        }
     }
 }

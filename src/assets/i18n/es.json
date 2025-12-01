@@ -23,5 +23,23 @@
             "PROJECTS": "Visión de Producto",
             "COMMIT": "Alto Rendimiento"
         }
+    },
+    "TECH_STACK": {
+        "TITLE": "Stack Tecnológico y Arquitectura",
+        "SUBTITLE": "Selección estratégica de herramientas robustas para construir ecosistemas digitales críticos, escalables y de alto rendimiento.",
+        "FRONTEND": {
+            "TITLE": "Frontend & Ecosistema Desktop",
+            "DESC": "Desarrollo de interfaces reactivas complejas y aplicaciones de escritorio nativas, con un enfoque en la experiencia de usuario fluida y rendimiento optimizado."
+        },
+        "BACKEND": {
+            "TITLE": "Backend & Capa de Datos",
+            "DESC": "Construcción de APIs robustas y escalables. Diseño de esquemas de datos híbridos (SQL/NoSQL) y uso de Aggregations avanzadas para procesamiento eficiente."
+        },
+        "ARCHITECTURE": {
+            "TITLE": "Arquitectura, DevOps & Seguridad",
+            "DESC": "Garantía de calidad y continuidad operativa mediante arquitecturas desacopladas, estrategias de seguridad (JWT) y sincronización resiliente para entornos críticos.",
+            "BADGE_1": "Clean Architecture",
+            "BADGE_2": "Offline-First Patterns"
+        }
     }
 }
