@@ -41,5 +41,30 @@
             "BADGE_1": "Clean Architecture",
             "BADGE_2": "Offline-First Patterns"
         }
+    },
+    "PROJECTS": {
+        "TITLE": "Proyectos Destacados",
+        "SUBTITLE": "Una selección de trabajos que demuestran mi capacidad para resolver problemas complejos con tecnología de punta.",
+        "SUDO": {
+            "TAG": "CASE STUDY • ARQUITECTURA OFFLINE-FIRST",
+            "TITLE": "SUDO ERP: Ecosistema de Gestión Crítica",
+            "DESC": "Plataforma integral para la gestión de recursos empresariales diseñada para operar en entornos de baja conectividad. Implementa un motor de sincronización bidireccional personalizado que garantiza la integridad de datos entre sucursales y la nube.",
+            "CTA": "Ver Arquitectura / Demo"
+        },
+        "SELECTED": {
+            "TITLE": "Módulos del Ecosistema"
+        },
+        "CARD_1": {
+            "TITLE": "Panel de Control Financiero",
+            "DESC": "Visualización en tiempo real de métricas críticas, flujo de caja y proyecciones de ventas."
+        },
+        "CARD_2": {
+            "TITLE": "Gestión de Inventario",
+            "DESC": "Control detallado de stock, alertas de reposición y seguimiento de movimientos entre sucursales."
+        },
+        "CARD_3": {
+            "TITLE": "Punto de Venta (POS)",
+            "DESC": "Interfaz optimizada para alta velocidad en transacciones, compatible con periféricos y modo offline."
+        }
     }
 }

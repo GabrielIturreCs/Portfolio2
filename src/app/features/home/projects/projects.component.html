@@ -1,0 +1,209 @@
+<section id="projects" class="py-24 bg-slate-50 dark:bg-slate-900 relative overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
+        <div
+            class="absolute top-1/3 right-0 w-[500px] h-[500px] bg-primary-500/5 dark:bg-primary-900/10 rounded-full blur-3xl">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-500/5 dark:bg-indigo-900/10 rounded-full blur-3xl">
+        </div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+
+        <!-- Section Header -->
+        <div class="text-center mb-20 animate-fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+                {{ 'PROJECTS.TITLE' | translate }}
+            </h2>
+            <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                {{ 'PROJECTS.SUBTITLE' | translate }}
+            </p>
+        </div>
+
+        <!-- PART 1: Flagship Project (SUDO ERP) -->
+        <div class="mb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Text Content (Left) -->
+                <div class="order-2 lg:order-1 space-y-8 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <!-- Tag -->
+                    <div class="inline-block">
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase bg-primary-500/10 text-primary-600 dark:text-primary-400 border border-primary-500/20">
+                            {{ 'PROJECTS.SUDO.TAG' | translate }}
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
+                        {{ 'PROJECTS.SUDO.TITLE' | translate }}
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        {{ 'PROJECTS.SUDO.DESC' | translate }}
+                    </p>
+
+                    <!-- Metrics -->
+                    <div class="flex flex-wrap gap-8 py-4 border-y border-slate-200 dark:border-slate-800">
+                        <div>
+                            <span class="block text-2xl font-bold text-slate-900 dark:text-white">0%</span>
+                            <span
+                                class="text-sm text-slate-500 dark:text-slate-500 uppercase tracking-wider">Downtime</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-slate-900 dark:text-white">+700</span>
+                            <span
+                                class="text-sm text-slate-500 dark:text-slate-500 uppercase tracking-wider">Features</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-slate-900 dark:text-white">50ms</span>
+                            <span
+                                class="text-sm text-slate-500 dark:text-slate-500 uppercase tracking-wider">Latency</span>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Badges -->
+                    <div class="flex flex-wrap gap-3">
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium">Angular</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium">Electron</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium">MongoDB</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium">Node.js</span>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="pt-4">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25">
+                            {{ 'PROJECTS.SUDO.CTA' | translate }}
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visual (Right) - Carousel -->
+                <div class="order-1 lg:order-2 relative group animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <!-- Glow Effect -->
+                    <div
+                        class="absolute inset-0 bg-primary-500/20 dark:bg-primary-500/10 blur-3xl rounded-full transform scale-90 group-hover:scale-100 transition-transform duration-700">
+                    </div>
+
+                    <!-- Browser Window Frame -->
+                    <div
+                        class="relative rounded-xl overflow-hidden bg-slate-900 shadow-2xl border border-slate-200 dark:border-slate-700 transform transition-all duration-500 group-hover:-translate-y-2 group-hover:rotate-1">
+                        <!-- Browser Header -->
+                        <div
+                            class="h-8 bg-slate-100 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex items-center px-4 gap-2 justify-between">
+                            <div class="flex gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                            </div>
+                            <!-- Carousel Controls -->
+                            <div class="flex gap-2">
+                                <button (click)="prevImage()"
+                                    class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                </button>
+                                <button (click)="nextImage()"
+                                    class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Image Container -->
+                        <div
+                            class="aspect-[16/10] bg-slate-900 relative overflow-hidden group flex items-center justify-center">
+                            <!-- Using object-contain to ensure the full image is visible without cropping -->
+                            <img [src]="currentImage" alt="SUDO ERP Dashboard"
+                                class="w-full h-full object-contain transition-opacity duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 2: System Modules (Grid) -->
+        <div>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-10 pl-4 border-l-4 border-primary-500">
+                {{ 'PROJECTS.SELECTED.TITLE' | translate }}
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Module Card 1 -->
+                <div
+                    class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                        <img src="assets/images/t2.PNG" alt="Module 1"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h4
+                            class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                            {{ 'PROJECTS.CARD_1.TITLE' | translate }}
+                        </h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                            {{ 'PROJECTS.CARD_1.DESC' | translate }}
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Module Card 2 -->
+                <div
+                    class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                        <img src="assets/images/t3.PNG" alt="Module 2"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h4
+                            class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                            {{ 'PROJECTS.CARD_2.TITLE' | translate }}
+                        </h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                            {{ 'PROJECTS.CARD_2.DESC' | translate }}
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Module Card 3 -->
+                <div
+                    class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                        <img src="assets/images/t4.PNG" alt="Module 3"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h4
+                            class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                            {{ 'PROJECTS.CARD_3.TITLE' | translate }}
+                        </h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                            {{ 'PROJECTS.CARD_3.DESC' | translate }}
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>

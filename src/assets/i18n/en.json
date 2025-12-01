@@ -41,5 +41,30 @@
             "BADGE_1": "Clean Architecture",
             "BADGE_2": "Offline-First Patterns"
         }
+    },
+    "PROJECTS": {
+        "TITLE": "Featured Projects",
+        "SUBTITLE": "A selection of works that demonstrate my ability to solve complex problems with cutting-edge technology.",
+        "SUDO": {
+            "TAG": "CASE STUDY • OFFLINE-FIRST ARCHITECTURE",
+            "TITLE": "SUDO ERP: Critical Management Ecosystem",
+            "DESC": "Comprehensive enterprise resource planning platform designed to operate in low-connectivity environments. Implements a custom bidirectional synchronization engine ensuring data integrity between branches and the cloud.",
+            "CTA": "View Architecture / Demo"
+        },
+        "SELECTED": {
+            "TITLE": "Ecosystem Modules"
+        },
+        "CARD_1": {
+            "TITLE": "Financial Dashboard",
+            "DESC": "Real-time visualization of critical metrics, cash flow, and sales projections."
+        },
+        "CARD_2": {
+            "TITLE": "Inventory Management",
+            "DESC": "Detailed stock control, replenishment alerts, and tracking of movements between branches."
+        },
+        "CARD_3": {
+            "TITLE": "Point of Sale (POS)",
+            "DESC": "Optimized interface for high-speed transactions, compatible with peripherals and offline mode."
+        }
     }
 }

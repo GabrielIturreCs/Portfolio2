@@ -6,11 +6,12 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HeroComponent } from './features/home/hero/hero.component';
 import { AboutComponent } from './features/home/about/about.component';
 import { TechStackComponent } from './features/home/tech-stack/tech-stack.component';
+import { ProjectsComponent } from './features/home/projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, HeroComponent, AboutComponent, TechStackComponent, TranslateModule],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, HeroComponent, AboutComponent, TechStackComponent, ProjectsComponent, TranslateModule],
   templateUrl: './app.html',
 })
 export class App { }
