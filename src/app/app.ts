@@ -10,6 +10,7 @@ import { ProjectsComponent } from './features/home/projects/projects.component';
 import { EducationComponent } from './features/home/education/education.component';
 import { ContactComponent } from './features/home/contact/contact.component';
 import { FeedbackComponent } from './features/home/feedback/feedback.component';
+import { ChatComponent } from './features/home/chat/chat.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,7 @@ import { FeedbackComponent } from './features/home/feedback/feedback.component';
     EducationComponent,
     ContactComponent,
     FeedbackComponent,
+    ChatComponent,
     TranslateModule
   ],
   templateUrl: './app.html',
