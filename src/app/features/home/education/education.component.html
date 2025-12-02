@@ -1,4 +1,4 @@
-<section id="education" class="py-24 bg-slate-950 relative overflow-hidden">
+<section id="education" class="py-24 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
     <!-- Background Elements -->
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-3xl"></div>
@@ -9,10 +9,10 @@
 
         <!-- Section Header -->
         <div class="text-center mb-20 animate-fade-in-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
                 {{ 'EDUCATION.TITLE' | translate }}
             </h2>
-            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                 {{ 'EDUCATION.SUBTITLE' | translate }}
             </p>
         </div>
@@ -26,45 +26,46 @@
                 </div>
 
                 <!-- Card Content -->
-                <div class="relative bg-slate-900 rounded-2xl p-8 md:p-10 border border-slate-800">
+                <div
+                    class="relative bg-white dark:bg-slate-900 rounded-2xl p-8 md:p-10 border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-none">
                     <div class="flex flex-col md:flex-row gap-8 items-start md:items-center justify-between">
 
                         <!-- Institution & Degree -->
                         <div class="space-y-4 flex-1">
                             <div class="flex items-center gap-3">
                                 <span
-                                    class="px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                                    class="px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20">
                                     {{ 'EDUCATION.UNIVERSITY.BADGE' | translate }}
                                 </span>
-                                <span class="text-slate-400 text-sm font-medium">
+                                <span class="text-slate-500 dark:text-slate-400 text-sm font-medium">
                                     {{ 'EDUCATION.UNIVERSITY.YEARS' | translate }}
                                 </span>
                             </div>
 
-                            <h3 class="text-3xl font-bold text-white">
+                            <h3 class="text-3xl font-bold text-slate-900 dark:text-white">
                                 {{ 'EDUCATION.UNIVERSITY.DEGREE' | translate }}
                             </h3>
 
-                            <div class="text-xl text-cyan-400 font-medium">
+                            <div class="text-xl text-cyan-600 dark:text-cyan-400 font-medium">
                                 {{ 'EDUCATION.UNIVERSITY.INSTITUTION' | translate }}
                             </div>
 
-                            <p class="text-slate-400 leading-relaxed max-w-2xl">
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
                                 {{ 'EDUCATION.UNIVERSITY.DESC' | translate }}
                             </p>
 
                             <!-- Key Modules -->
                             <div class="flex flex-wrap gap-2 pt-2">
                                 <span
-                                    class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium border border-slate-700">
+                                    class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700">
                                     {{ 'EDUCATION.UNIVERSITY.MODULE_1' | translate }}
                                 </span>
                                 <span
-                                    class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium border border-slate-700">
+                                    class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700">
                                     {{ 'EDUCATION.UNIVERSITY.MODULE_2' | translate }}
                                 </span>
                                 <span
-                                    class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium border border-slate-700">
+                                    class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700">
                                     {{ 'EDUCATION.UNIVERSITY.MODULE_3' | translate }}
                                 </span>
                             </div>
@@ -72,7 +73,7 @@
 
                         <!-- Icon/Visual (Optional, using a generic academic icon for now) -->
                         <div
-                            class="hidden md:flex items-center justify-center w-24 h-24 rounded-full bg-slate-800/50 border border-slate-700 text-cyan-500">
+                            class="hidden md:flex items-center justify-center w-24 h-24 rounded-full bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 text-cyan-600 dark:text-cyan-500">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                     d="M12 14l9-5-9-5-9 5 9 5z"></path>
@@ -95,13 +96,13 @@
 
             <!-- Card 1: Angular (Highlighted) -->
             <div
-                class="group relative bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10 lg:col-span-2 xl:col-span-1">
+                class="group relative bg-white/80 dark:bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10 lg:col-span-2 xl:col-span-1">
                 <div
                     class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl">
                 </div>
                 <div class="relative z-10">
                     <div class="flex justify-between items-start mb-4">
-                        <div class="p-2 rounded-lg bg-slate-800 text-red-500">
+                        <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-red-500">
                             <!-- Angular Icon Placeholder -->
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2.5L2.5 6.5L4.5 18.5L12 22.5L19.5 18.5L21.5 6.5L12 2.5Z" stroke="none" />
@@ -109,28 +110,31 @@
                         </div>
                         <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Udemy</span>
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                    <h4
+                        class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                         {{ 'EDUCATION.CERT_1.TITLE' | translate }}
                     </h4>
-                    <p class="text-slate-400 text-sm mb-4">
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
                         {{ 'EDUCATION.CERT_1.HIGHLIGHT' | translate }}
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">Angular
-                            19</span>
-                        <span class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">RxJS</span>
                         <span
-                            class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">Performance</span>
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Angular
+                            19</span>
+                        <span
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">RxJS</span>
+                        <span
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Performance</span>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2: Web Standards -->
             <div
-                class="group relative bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10">
+                class="group relative bg-white/80 dark:bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10">
                 <div class="relative z-10">
                     <div class="flex justify-between items-start mb-4">
-                        <div class="p-2 rounded-lg bg-slate-800 text-yellow-500">
+                        <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-yellow-500">
                             <!-- JS Icon Placeholder -->
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M3 3h18v18H3V3zm13.5 13.5V9h-1.5v6h-1.5v-6H12v6h-1.5v-6H9v7.5h7.5z"
@@ -139,25 +143,28 @@
                         </div>
                         <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Udemy</span>
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                    <h4
+                        class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                         {{ 'EDUCATION.CERT_2.TITLE' | translate }}
                     </h4>
-                    <p class="text-slate-400 text-sm mb-4">
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
                         {{ 'EDUCATION.CERT_2.HIGHLIGHT' | translate }}
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">DOM</span>
-                        <span class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">ES6+</span>
+                        <span
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">DOM</span>
+                        <span
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">ES6+</span>
                     </div>
                 </div>
             </div>
 
             <!-- Card 3: Frontend UX -->
             <div
-                class="group relative bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10">
+                class="group relative bg-white/80 dark:bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10">
                 <div class="relative z-10">
                     <div class="flex justify-between items-start mb-4">
-                        <div class="p-2 rounded-lg bg-slate-800 text-pink-500">
+                        <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-pink-500">
                             <!-- Design Icon Placeholder -->
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -167,25 +174,29 @@
                         </div>
                         <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">TodoCode</span>
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                    <h4
+                        class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                         {{ 'EDUCATION.CERT_3.TITLE' | translate }}
                     </h4>
-                    <p class="text-slate-400 text-sm mb-4">
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
                         {{ 'EDUCATION.CERT_3.HIGHLIGHT' | translate }}
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">CSS Grid</span>
-                        <span class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">UX</span>
+                        <span
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">CSS
+                            Grid</span>
+                        <span
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">UX</span>
                     </div>
                 </div>
             </div>
 
             <!-- Card 4: Foundations -->
             <div
-                class="group relative bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10 lg:col-span-3 xl:col-span-1">
+                class="group relative bg-white/80 dark:bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10 lg:col-span-3 xl:col-span-1">
                 <div class="relative z-10">
                     <div class="flex justify-between items-start mb-4">
-                        <div class="p-2 rounded-lg bg-slate-800 text-blue-500">
+                        <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-blue-500">
                             <!-- Code Icon Placeholder -->
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -195,16 +206,18 @@
                         <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Argentina
                             Programa</span>
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                    <h4
+                        class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                         {{ 'EDUCATION.CERT_4.TITLE' | translate }}
                     </h4>
-                    <p class="text-slate-400 text-sm mb-4">
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
                         {{ 'EDUCATION.CERT_4.HIGHLIGHT' | translate }}
                     </p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">Lógica</span>
                         <span
-                            class="px-2 py-1 text-xs font-medium rounded bg-slate-800 text-slate-300">Algoritmos</span>
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Lógica</span>
+                        <span
+                            class="px-2 py-1 text-xs font-medium rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Algoritmos</span>
                     </div>
                 </div>
             </div>

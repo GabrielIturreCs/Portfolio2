@@ -48,6 +48,11 @@
         "SUDO": {
             "TAG": "CASE STUDY • OFFLINE-FIRST ARCHITECTURE",
             "TITLE": "SUDO ERP: Critical Management Ecosystem",
+            "METRICS": {
+                "DOWNTIME": "Downtime",
+                "FEATURES": "Features",
+                "LATENCY": "Latency"
+            },
             "DESC": "Comprehensive enterprise resource planning platform designed to operate in low-connectivity environments. Implements a custom bidirectional synchronization engine ensuring data integrity between branches and the cloud.",
             "CTA": "View Architecture / Demo"
         },

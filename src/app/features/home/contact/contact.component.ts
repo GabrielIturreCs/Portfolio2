@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 export class ContactComponent {
     email = 'gabriel13iturre@gmail.com';
     copied = false;
+    isSubmitting = false;
 
     copyEmail() {
         navigator.clipboard.writeText(this.email).then(() => {

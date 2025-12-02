@@ -46,8 +46,13 @@
         "TITLE": "Proyectos Destacados",
         "SUBTITLE": "Una selección de trabajos que demuestran mi capacidad para resolver problemas complejos con tecnología de punta.",
         "SUDO": {
-            "TAG": "CASE STUDY • ARQUITECTURA OFFLINE-FIRST",
+            "TAG": "ESTUDIO DE CASO • ARQUITECTURA OFFLINE-FIRST",
             "TITLE": "SUDO ERP: Ecosistema de Gestión Crítica",
+            "METRICS": {
+                "DOWNTIME": "Inactividad",
+                "FEATURES": "Funcionalidades",
+                "LATENCY": "Latencia"
+            },
             "DESC": "Plataforma integral para la gestión de recursos empresariales diseñada para operar en entornos de baja conectividad. Implementa un motor de sincronización bidireccional personalizado que garantiza la integridad de datos entre sucursales y la nube.",
             "CTA": "Ver Arquitectura / Demo"
         },
@@ -102,7 +107,7 @@
         "SUBTITLE": "Estoy disponible para discutir oportunidades de Ingeniería Full Stack, arquitectura de sistemas o consultoría técnica. ¿Tienes un desafío complejo? Hablemos.",
         "COPY": "Copiar Email",
         "COPIED": "¡Copiado!",
-        "LOCATION": "Jujuy, Argentina (Remote Ready)",
+        "LOCATION": "Jujuy, Argentina (Listo para Remoto)",
         "FORM": {
             "NAME": "Nombre Completo",
             "EMAIL": "Correo Electrónico",
