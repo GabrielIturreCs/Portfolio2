@@ -1,0 +1,185 @@
+<section id="endorsements" class="py-24 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
+        <div class="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div class="animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+                    Professional Endorsements
+                </h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl">
+                    Feedback from colleagues and clients I've had the pleasure of working with.
+                </p>
+            </div>
+            <button (click)="openModal()"
+                class="group px-6 py-3 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-semibold rounded-xl border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 flex items-center gap-2">
+                <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                </svg>
+                Leave Feedback
+            </button>
+        </div>
+
+        <!-- The Wall (Horizontal Scroll) -->
+        <div class="relative -mx-6 px-6">
+            <div class="flex gap-6 overflow-x-auto pb-8 pt-2 hide-scrollbar snap-x snap-mandatory">
+
+                <!-- Empty State -->
+                <div *ngIf="feedbacks().length === 0"
+                    class="snap-center shrink-0 w-full md:w-[400px] h-[280px] flex flex-col items-center justify-center bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-800 border-dashed">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4 text-slate-400">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 font-medium">Be the first to endorse!</p>
+                </div>
+
+                <!-- Feedback Cards -->
+                <div *ngFor="let feedback of feedbacks()"
+                    class="snap-center shrink-0 w-[300px] md:w-[400px] bg-white/80 dark:bg-slate-900/50 backdrop-blur-md rounded-2xl p-6 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/30 transition-all duration-300 group">
+
+                    <!-- Header -->
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center gap-3">
+                            <img [src]="feedback.avatar" [alt]="feedback.name"
+                                class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 object-cover border border-slate-200 dark:border-slate-700">
+                            <div>
+                                <h4 class="font-bold text-slate-900 dark:text-white leading-tight">{{ feedback.name }}
+                                </h4>
+                                <p
+                                    class="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wide">
+                                    {{ feedback.role }}</p>
+                            </div>
+                        </div>
+                        <span
+                            class="px-2 py-1 rounded-md bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 text-xs font-bold border border-cyan-500/20">
+                            {{ feedback.tag }}
+                        </span>
+                    </div>
+
+                    <!-- Message -->
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed italic relative">
+                        <span
+                            class="absolute -top-2 -left-1 text-4xl text-slate-200 dark:text-slate-800 font-serif select-none">"</span>
+                        {{ feedback.message }}
+                    </p>
+                </div>
+            </div>
+
+            <!-- Fade Gradients for Scroll -->
+            <div
+                class="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-slate-50 dark:from-slate-950 to-transparent pointer-events-none">
+            </div>
+            <div
+                class="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-slate-50 dark:from-slate-950 to-transparent pointer-events-none">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div *ngIf="showModal()"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm"
+        (click)="closeModal()">
+
+        <!-- Modal Content -->
+        <div @fadeInScale
+            class="w-full max-w-lg bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden"
+            (click)="$event.stopPropagation()">
+
+            <!-- Modal Header -->
+            <div
+                class="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-900/50">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Leave an Endorsement</h3>
+                <button (click)="closeModal()"
+                    class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <form [formGroup]="form" (ngSubmit)="submit()" class="p-6 space-y-6">
+
+                <!-- Avatar Selection -->
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">Choose an
+                        Avatar</label>
+                    <div class="flex gap-4 justify-center">
+                        <button type="button" *ngFor="let av of avatars" (click)="selectAvatar(av)"
+                            [class.ring-2]="form.get('avatar')?.value === av"
+                            class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-transparent hover:border-cyan-500 transition-all ring-cyan-500 ring-offset-2 ring-offset-white dark:ring-offset-slate-900">
+                            <img [src]="av" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Name -->
+                    <div class="space-y-1">
+                        <label class="text-sm font-medium text-slate-700 dark:text-slate-300">Name</label>
+                        <input type="text" formControlName="name"
+                            class="w-full px-4 py-2 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 outline-none transition-all">
+                    </div>
+                    <!-- Role -->
+                    <div class="space-y-1">
+                        <label class="text-sm font-medium text-slate-700 dark:text-slate-300">Role / Company</label>
+                        <input type="text" formControlName="role"
+                            class="w-full px-4 py-2 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 outline-none transition-all">
+                    </div>
+                </div>
+
+                <!-- Tag Selection -->
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">Highlight
+                        Tag</label>
+                    <div class="flex flex-wrap gap-2">
+                        <button type="button" *ngFor="let t of tags" (click)="selectTag(t)"
+                            [class.bg-cyan-500]="form.get('tag')?.value === t"
+                            [class.text-white]="form.get('tag')?.value === t"
+                            [class.border-cyan-500]="form.get('tag')?.value === t"
+                            [class.bg-slate-100]="form.get('tag')?.value !== t"
+                            [class.dark:bg-slate-800]="form.get('tag')?.value !== t"
+                            [class.text-slate-600]="form.get('tag')?.value !== t"
+                            [class.dark:text-slate-400]="form.get('tag')?.value !== t"
+                            class="px-3 py-1.5 rounded-lg text-sm font-medium border border-transparent transition-all hover:border-cyan-500/50">
+                            {{ t }}
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="space-y-1">
+                    <label class="text-sm font-medium text-slate-700 dark:text-slate-300">Message</label>
+                    <textarea formControlName="message" rows="3"
+                        class="w-full px-4 py-2 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 outline-none transition-all resize-none"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" [disabled]="form.invalid || isSubmitting()"
+                    class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold shadow-lg hover:shadow-cyan-500/25 hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
+                    <span *ngIf="!isSubmitting()">Submit Endorsement</span>
+                    <span *ngIf="isSubmitting()" class="flex items-center justify-center gap-2">
+                        <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"
+                                fill="none"></circle>
+                            <path class="opacity-75" fill="currentColor"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                            </path>
+                        </svg>
+                        Publishing...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

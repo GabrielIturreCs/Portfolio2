@@ -9,6 +9,7 @@ import { TechStackComponent } from './features/home/tech-stack/tech-stack.compon
 import { ProjectsComponent } from './features/home/projects/projects.component';
 import { EducationComponent } from './features/home/education/education.component';
 import { ContactComponent } from './features/home/contact/contact.component';
+import { FeedbackComponent } from './features/home/feedback/feedback.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ import { ContactComponent } from './features/home/contact/contact.component';
     ProjectsComponent,
     EducationComponent,
     ContactComponent,
+    FeedbackComponent,
     TranslateModule
   ],
   templateUrl: './app.html',
