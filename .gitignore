@@ -127,3 +127,6 @@ firestore-debug.log
 
 # Netlify
 .netlify/
+
+# Backend (separate repository)
+backend/
