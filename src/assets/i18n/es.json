@@ -96,5 +96,19 @@
             "TITLE": "Fundamentos de Programación",
             "HIGHLIGHT": "Lógica Computacional"
         }
+    },
+    "CONTACT": {
+        "TITLE": "Iniciemos la Conversación",
+        "SUBTITLE": "Estoy disponible para discutir oportunidades de Ingeniería Full Stack, arquitectura de sistemas o consultoría técnica. ¿Tienes un desafío complejo? Hablemos.",
+        "COPY": "Copiar Email",
+        "COPIED": "¡Copiado!",
+        "LOCATION": "Jujuy, Argentina (Remote Ready)",
+        "FORM": {
+            "NAME": "Nombre Completo",
+            "EMAIL": "Correo Electrónico",
+            "SUBJECT": "Asunto",
+            "MESSAGE": "Mensaje",
+            "SEND": "Enviar Mensaje"
+        }
     }
 }
