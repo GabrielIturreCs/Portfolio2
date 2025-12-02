@@ -85,11 +85,17 @@ export class ContactComponent {
     }
 
     private sendEmailViaFormSubmit() {
+        // Create a hidden iframe to submit the form without redirecting
+        const iframe = document.createElement('iframe');
+        iframe.name = 'formsubmit-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+
         // Create a hidden form to submit to FormSubmit
         const formSubmitForm = document.createElement('form');
         formSubmitForm.action = 'https://formsubmit.co/gabriel13iturre@gmail.com';
         formSubmitForm.method = 'POST';
-        formSubmitForm.target = '_blank'; // Open in new tab to avoid navigation
+        formSubmitForm.target = 'formsubmit-iframe'; // Target the hidden iframe
         formSubmitForm.style.display = 'none';
 
         // Add form fields
@@ -117,6 +123,7 @@ export class ContactComponent {
         // Clean up after a short delay
         setTimeout(() => {
             document.body.removeChild(formSubmitForm);
-        }, 1000);
+            document.body.removeChild(iframe);
+        }, 2000);
     }
 }
