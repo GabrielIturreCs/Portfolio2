@@ -115,5 +115,20 @@
             "MESSAGE": "Mensaje",
             "SEND": "Enviar Mensaje"
         }
+    },
+    "FEEDBACK": {
+        "TITLE": "Recomendaciones Profesionales",
+        "SUBTITLE": "Feedback de colegas y clientes con los que he tenido el placer de trabajar.",
+        "BUTTON": "Dejar Feedback",
+        "EMPTY_STATE": "¡Sé el primero en recomendar!",
+        "MODAL_TITLE": "Dejar una Recomendación",
+        "LABEL_AVATAR": "Elige un Avatar",
+        "LABEL_NAME": "Nombre",
+        "LABEL_ROLE": "Rol / Empresa (Opcional)",
+        "PLACEHOLDER_ROLE": "Ej: Estudiante de Ingeniería, CTO, etc.",
+        "LABEL_TAG": "Tag Destacado",
+        "LABEL_MESSAGE": "Mensaje",
+        "SUBMIT": "Publicar Recomendación",
+        "SUBMITTING": "Publicando..."
     }
 }

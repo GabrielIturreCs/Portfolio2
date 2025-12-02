@@ -5,10 +5,10 @@ import { Observable } from 'rxjs';
 export interface Feedback {
     _id?: string;
     name: string;
-    role: string;
+    role?: string;
     message: string;
     avatar: string;
-    tag: 'Calidad de Código' | 'Arquitectura' | 'Velocidad' | 'Comunicación';
+    tag: string;
     createdAt?: Date;
 }
 

@@ -61,7 +61,7 @@
         },
         "CARD_1": {
             "TITLE": "Dental Practice Management System",
-            "DESC": "Comprehensive clinical platform featuring OAuth 2.0 auth, RBAC role management, and MercadoPago integration. Includes an intelligent chatbot and admin dashboard with real-time reporting."
+            "DESC": "Comprehensive clinical platform featuring OAuth 2.0, auth, RBAC role management, and MercadoPago integration. Includes an intelligent chatbot and admin dashboard with real-time reporting."
         },
         "CARD_2": {
             "TITLE": "Petit Salon - Digital Experience",
@@ -115,5 +115,20 @@
             "MESSAGE": "Message",
             "SEND": "Send Message"
         }
+    },
+    "FEEDBACK": {
+        "TITLE": "Professional Endorsements",
+        "SUBTITLE": "Feedback from colleagues and clients I've had the pleasure of working with.",
+        "BUTTON": "Leave Feedback",
+        "EMPTY_STATE": "Be the first to endorse!",
+        "MODAL_TITLE": "Leave an Endorsement",
+        "LABEL_AVATAR": "Choose an Avatar",
+        "LABEL_NAME": "Name",
+        "LABEL_ROLE": "Role / Company (Optional)",
+        "PLACEHOLDER_ROLE": "Ex: Engineering Student, CTO, etc.",
+        "LABEL_TAG": "Highlight Tag",
+        "LABEL_MESSAGE": "Message",
+        "SUBMIT": "Submit Endorsement",
+        "SUBMITTING": "Publishing..."
     }
 }
