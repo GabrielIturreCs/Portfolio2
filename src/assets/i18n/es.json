@@ -52,19 +52,49 @@
             "CTA": "Ver Arquitectura / Demo"
         },
         "SELECTED": {
-            "TITLE": "Módulos del Ecosistema"
+            "TITLE": "Otros Proyectos de Alto Impacto"
         },
         "CARD_1": {
-            "TITLE": "Panel de Control Financiero",
-            "DESC": "Visualización en tiempo real de métricas críticas, flujo de caja y proyecciones de ventas."
+            "TITLE": "Sistema de Gestión Odontológica",
+            "DESC": "Plataforma clínica integral con autenticación OAuth 2.0, gestión de roles (RBAC) y pagos vía MercadoPago. Incluye un chatbot inteligente y dashboard administrativo con reportes en tiempo real."
         },
         "CARD_2": {
-            "TITLE": "Gestión de Inventario",
-            "DESC": "Control detallado de stock, alertas de reposición y seguimiento de movimientos entre sucursales."
+            "TITLE": "Peluquería Petit - Experiencia Digital",
+            "DESC": "Diseño UX/UI y desarrollo frontend enfocado en conversión. Estrategia de marca digital con integración de Google Analytics y optimización de rendimiento (Core Web Vitals)."
         },
         "CARD_3": {
-            "TITLE": "Punto de Venta (POS)",
-            "DESC": "Interfaz optimizada para alta velocidad en transacciones, compatible con periféricos y modo offline."
+            "TITLE": "Arquitectura de Microservicios",
+            "DESC": "Diseño de sistema distribuido para alta escalabilidad, implementando patrones de comunicación asíncrona y gateways centralizados."
+        }
+    },
+    "EDUCATION": {
+        "TITLE": "Formación Académica & Certificaciones",
+        "SUBTITLE": "Una combinación de rigor académico en Ciencias de la Computación y especialización técnica continua en tecnologías modernas.",
+        "UNIVERSITY": {
+            "BADGE": "Nivel Avanzado / Final Stage",
+            "YEARS": "2022 - Presente",
+            "DEGREE": "Analista Programador Universitario",
+            "INSTITUTION": "Facultad de Ingeniería - Universidad Nacional de Jujuy",
+            "DESC": "Formación rigurosa en ingeniería de software. Foco en Algoritmos Complejos, Estructuras de Datos, Patrones de Diseño (POO) y Bases de Datos Relacionales/NoSQL.",
+            "MODULE_1": "Ingeniería de Software",
+            "MODULE_2": "Metodologías Ágiles",
+            "MODULE_3": "Análisis de Sistemas"
+        },
+        "CERT_1": {
+            "TITLE": "Arquitectura Avanzada en Angular",
+            "HIGHLIGHT": "Angular 19, RxJS, Performance"
+        },
+        "CERT_2": {
+            "TITLE": "Desarrollo Web Moderno",
+            "HIGHLIGHT": "DOM, ES6+, Web Components"
+        },
+        "CERT_3": {
+            "TITLE": "UI Engineering & Responsive Design",
+            "HIGHLIGHT": "CSS Grid, Flexbox, UX Principles"
+        },
+        "CERT_4": {
+            "TITLE": "Fundamentos de Programación",
+            "HIGHLIGHT": "Lógica Computacional"
         }
     }
 }

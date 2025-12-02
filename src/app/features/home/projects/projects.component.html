@@ -137,7 +137,7 @@
             </div>
         </div>
 
-        <!-- PART 2: System Modules (Grid) -->
+        <!-- PART 2: Selected Works (Grid) -->
         <div>
             <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-10 pl-4 border-l-4 border-primary-500">
                 {{ 'PROJECTS.SELECTED.TITLE' | translate }}
@@ -145,11 +145,11 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Module Card 1 -->
+                <!-- Project Card 1: Sistema Odontológico -->
                 <div
                     class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                     <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                        <img src="assets/images/t2.PNG" alt="Module 1"
+                        <img src="assets/images/t2.PNG" alt="Sistema Odontológico"
                             class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
                     </div>
@@ -158,17 +158,29 @@
                             class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                             {{ 'PROJECTS.CARD_1.TITLE' | translate }}
                         </h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-3">
                             {{ 'PROJECTS.CARD_1.DESC' | translate }}
                         </p>
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400">Angular</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">Node.js</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">MongoDB</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">OAuth
+                                2.0</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Module Card 2 -->
+                <!-- Project Card 2: Peluquería Petit -->
                 <div
                     class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                     <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                        <img src="assets/images/t3.PNG" alt="Module 2"
+                        <img src="assets/images/t3.PNG" alt="Peluquería Petit"
                             class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
                     </div>
@@ -177,17 +189,26 @@
                             class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                             {{ 'PROJECTS.CARD_2.TITLE' | translate }}
                         </h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-3">
                             {{ 'PROJECTS.CARD_2.DESC' | translate }}
                         </p>
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400">HTML/CSS</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">Bootstrap</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400">Figma</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Module Card 3 -->
+                <!-- Project Card 3: Microservices (Generic) -->
                 <div
                     class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                     <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                        <img src="assets/images/t4.PNG" alt="Module 3"
+                        <img src="assets/images/t4.PNG" alt="Microservices"
                             class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
                     </div>
@@ -196,9 +217,18 @@
                             class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                             {{ 'PROJECTS.CARD_3.TITLE' | translate }}
                         </h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-3">
                             {{ 'PROJECTS.CARD_3.DESC' | translate }}
                         </p>
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400">Docker</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">Kubernetes</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">gRPC</span>
+                        </div>
                     </div>
                 </div>
 

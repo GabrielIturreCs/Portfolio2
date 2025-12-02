@@ -52,19 +52,49 @@
             "CTA": "View Architecture / Demo"
         },
         "SELECTED": {
-            "TITLE": "Ecosystem Modules"
+            "TITLE": "Other High-Impact Projects"
         },
         "CARD_1": {
-            "TITLE": "Financial Dashboard",
-            "DESC": "Real-time visualization of critical metrics, cash flow, and sales projections."
+            "TITLE": "Dental Practice Management System",
+            "DESC": "Comprehensive clinical platform featuring OAuth 2.0 auth, RBAC role management, and MercadoPago integration. Includes an intelligent chatbot and admin dashboard with real-time reporting."
         },
         "CARD_2": {
-            "TITLE": "Inventory Management",
-            "DESC": "Detailed stock control, replenishment alerts, and tracking of movements between branches."
+            "TITLE": "Petit Salon - Digital Experience",
+            "DESC": "Conversion-focused UX/UI design and frontend development. Digital brand strategy with Google Analytics integration and Core Web Vitals optimization."
         },
         "CARD_3": {
-            "TITLE": "Point of Sale (POS)",
-            "DESC": "Optimized interface for high-speed transactions, compatible with peripherals and offline mode."
+            "TITLE": "Microservices Architecture",
+            "DESC": "Distributed system design for high scalability, implementing asynchronous communication patterns and centralized gateways."
+        }
+    },
+    "EDUCATION": {
+        "TITLE": "Education & Certifications",
+        "SUBTITLE": "A blend of academic rigor in Computer Science and continuous technical specialization in modern technologies.",
+        "UNIVERSITY": {
+            "BADGE": "Advanced Level / Final Stage",
+            "YEARS": "2022 - Present",
+            "DEGREE": "University Programmer Analyst",
+            "INSTITUTION": "Faculty of Engineering - National University of Jujuy",
+            "DESC": "Rigorous training in software engineering. Focus on Complex Algorithms, Data Structures, Design Patterns (OOP), and Relational/NoSQL Databases.",
+            "MODULE_1": "Software Engineering",
+            "MODULE_2": "Agile Methodologies",
+            "MODULE_3": "Systems Analysis"
+        },
+        "CERT_1": {
+            "TITLE": "Advanced Angular Architecture",
+            "HIGHLIGHT": "Angular 19, RxJS, Performance"
+        },
+        "CERT_2": {
+            "TITLE": "Modern Web Development",
+            "HIGHLIGHT": "DOM, ES6+, Web Components"
+        },
+        "CERT_3": {
+            "TITLE": "UI Engineering & Responsive Design",
+            "HIGHLIGHT": "CSS Grid, Flexbox, UX Principles"
+        },
+        "CERT_4": {
+            "TITLE": "Programming Foundations",
+            "HIGHLIGHT": "Computational Logic"
         }
     }
 }
