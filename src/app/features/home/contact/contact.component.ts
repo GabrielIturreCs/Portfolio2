@@ -46,7 +46,7 @@ export class ContactComponent {
         this.showSuccess = false;
         this.showError = false;
 
-        // Prepare feedback data
+        // Prepare feedback data for database
         const feedback = {
             name: this.formData.name,
             role: this.formData.subject, // Using subject as role
@@ -55,8 +55,12 @@ export class ContactComponent {
             tag: 'Comunicación' // Valid enum value from backend
         };
 
+        // Save to database
         this.feedbackService.submitFeedback(feedback).subscribe({
             next: () => {
+                // After saving to DB, send email via FormSubmit
+                this.sendEmailViaFormSubmit();
+
                 this.isSubmitting = false;
                 this.showSuccess = true;
                 form.resetForm();
@@ -78,5 +82,41 @@ export class ContactComponent {
                 }, 5000);
             }
         });
+    }
+
+    private sendEmailViaFormSubmit() {
+        // Create a hidden form to submit to FormSubmit
+        const formSubmitForm = document.createElement('form');
+        formSubmitForm.action = 'https://formsubmit.co/gabriel13iturre@gmail.com';
+        formSubmitForm.method = 'POST';
+        formSubmitForm.target = '_blank'; // Open in new tab to avoid navigation
+        formSubmitForm.style.display = 'none';
+
+        // Add form fields
+        const fields = [
+            { name: 'name', value: this.formData.name },
+            { name: 'email', value: this.formData.email },
+            { name: 'subject', value: this.formData.subject },
+            { name: 'message', value: this.formData.message },
+            { name: '_captcha', value: 'false' },
+            { name: '_template', value: 'table' }
+        ];
+
+        fields.forEach(field => {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = field.name;
+            input.value = field.value;
+            formSubmitForm.appendChild(input);
+        });
+
+        // Append form to body and submit
+        document.body.appendChild(formSubmitForm);
+        formSubmitForm.submit();
+
+        // Clean up after a short delay
+        setTimeout(() => {
+            document.body.removeChild(formSubmitForm);
+        }, 1000);
     }
 }
