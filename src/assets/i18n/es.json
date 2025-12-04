@@ -3,6 +3,8 @@
         "HOME": "Inicio",
         "ABOUT": "Sobre Mí",
         "PROJECTS": "Proyectos",
+        "EDUCATION": "Educación",
+        "TESTIMONIALS": "Testimonios",
         "CONTACT": "Contacto"
     },
     "HERO": {
@@ -43,33 +45,63 @@
         }
     },
     "PROJECTS": {
-        "TITLE": "Proyectos Destacados",
-        "SUBTITLE": "Una selección de trabajos que demuestran mi capacidad para resolver problemas complejos con tecnología de punta.",
+        "TITLE": "Productos & Proyectos",
+        "SUBTITLE": "Desarrollo de productos digitales de alto impacto, diseñados para escalar y convertir.",
         "SUDO": {
-            "TAG": "ESTUDIO DE CASO • ARQUITECTURA OFFLINE-FIRST",
-            "TITLE": "SUDO ERP: Ecosistema de Gestión Crítica",
+            "TAG": "PRODUCTO SAAS • OFFLINE-FIRST",
+            "TITLE": "SUDO ERP: Gestión Sin Límites",
             "METRICS": {
                 "DOWNTIME": "Inactividad",
-                "FEATURES": "Funcionalidades",
-                "LATENCY": "Latencia"
+                "FEATURES": "Módulos",
+                "LATENCY": "Sincronización"
             },
-            "DESC": "Plataforma integral para la gestión de recursos empresariales diseñada para operar en entornos de baja conectividad. Implementa un motor de sincronización bidireccional personalizado que garantiza la integridad de datos entre sucursales y la nube.",
-            "CTA": "Ver Arquitectura / Demo"
+            "DESC": "Más que un ERP, es un ecosistema de gestión resiliente. Diseñado para operar en entornos críticos sin conexión, garantizando que tu negocio nunca se detenga. Arquitectura híbrida que sincroniza automáticamente cuando recupera la red.",
+            "CTA_DEMO": "Ver Demo en Vivo",
+            "CTA_ACCESS": "Solicitar Acceso",
+            "ACCESS_MSG": "Este es un producto comercial protegido. Para obtener credenciales de acceso o una demo guiada, por favor contáctame vía LinkedIn."
+        },
+        "GHOSTCUT": {
+            "TITLE": "GhostCut: Edición con IA",
+            "DESC": "Herramienta web profesional para el procesamiento masivo de imágenes. Elimina fondos con IA, recorta y comprime localmente en el navegador. Privacidad total: tus fotos nunca salen de tu dispositivo.",
+            "CTA_DEMO": "Probar GhostCut",
+            "CTA_REPO": "Código Fuente"
+        },
+        "PELUQUERIA": {
+            "TAG": "SITIO WEB DE ALTO RENDIMIENTO • SEO & VENTAS",
+            "TITLE": "Peluquería Petit: Máxima Conversión",
+            "METRICS": {
+                "SEO": "Top 1 Google",
+                "CONVERSION": "+40% Ventas",
+                "PERFORMANCE": "100/100"
+            },
+            "DESC": "Plataforma web diseñada estratégicamente para posicionamiento SEO y captación de clientes. Diseño 'Mobile-First' impecable y optimización de carga que garantiza la retención de usuarios y aumenta las reservas.",
+            "CTA_DEMO": "Visitar Sitio",
+            "CTA_REPO": "Código Fuente"
         },
         "SELECTED": {
-            "TITLE": "Otros Proyectos de Alto Impacto"
+            "TITLE": "Otros Proyectos Técnicos"
         },
         "CARD_1": {
-            "TITLE": "Sistema de Gestión Odontológica",
-            "DESC": "Plataforma clínica integral con autenticación OAuth 2.0, gestión de roles (RBAC) y pagos vía MercadoPago. Incluye un chatbot inteligente y dashboard administrativo con reportes en tiempo real."
-        },
-        "CARD_2": {
-            "TITLE": "Peluquería Petit - Experiencia Digital",
-            "DESC": "Diseño UX/UI y desarrollo frontend enfocado en conversión. Estrategia de marca digital con integración de Google Analytics y optimización de rendimiento (Core Web Vitals)."
-        },
-        "CARD_3": {
-            "TITLE": "Arquitectura de Microservicios",
-            "DESC": "Diseño de sistema distribuido para alta escalabilidad, implementando patrones de comunicación asíncrona y gateways centralizados."
+            "TITLE": "SAS Medical - Consultorios Excelencia",
+            "DESC": "Sistema integral de gestión clínica diseñado para consultorios odontológicos modernos. Gestión completa de pacientes, turnos, historias clínicas digitales, facturación y análisis de rendimiento en una sola plataforma profesional.",
+            "TAG": "PRODUCTO SAAS • GESTIÓN CLÍNICA",
+            "CTA_DEMO": "Ver Demo",
+            "CTA_INFO": "Info de Acceso",
+            "INFO_MSG": "Puedes registrarte manualmente o usar Google Login. Nota: El backend es gratuito, por lo que el primer inicio de sesión puede tardar hasta 30 segundos en 'despertar' el servidor.",
+            "FEATURES": {
+                "AGENDA": {
+                    "TITLE": "Agenda Inteligente",
+                    "DESC": "Sistema de turnos con recordatorios automáticos por email, gestión de listas de espera, y optimización de horarios para maximizar la productividad del consultorio."
+                },
+                "PATIENTS": {
+                    "TITLE": "Gestión de Pacientes",
+                    "DESC": "Historias clínicas digitales completas, registro de tratamientos, odontogramas interactivos, y seguimiento detallado de cada paciente."
+                },
+                "BILLING": {
+                    "TITLE": "Facturación & Reportes",
+                    "DESC": "Control de pagos, presupuestos, obras sociales, y dashboard con métricas en tiempo real para análisis de rendimiento y facturación."
+                }
+            }
         }
     },
     "EDUCATION": {

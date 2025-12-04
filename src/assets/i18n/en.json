@@ -3,6 +3,8 @@
         "HOME": "Home",
         "ABOUT": "About Me",
         "PROJECTS": "Projects",
+        "EDUCATION": "Education",
+        "TESTIMONIALS": "Endorsements",
         "CONTACT": "Contact"
     },
     "HERO": {
@@ -43,33 +45,63 @@
         }
     },
     "PROJECTS": {
-        "TITLE": "Featured Projects",
-        "SUBTITLE": "A selection of works that demonstrate my ability to solve complex problems with cutting-edge technology.",
+        "TITLE": "Products & Projects",
+        "SUBTITLE": "Development of high-impact digital products, designed to scale and convert.",
         "SUDO": {
-            "TAG": "CASE STUDY • OFFLINE-FIRST ARCHITECTURE",
-            "TITLE": "SUDO ERP: Critical Management Ecosystem",
+            "TAG": "SAAS PRODUCT • OFFLINE-FIRST",
+            "TITLE": "SUDO ERP: Limitless Management",
             "METRICS": {
                 "DOWNTIME": "Downtime",
-                "FEATURES": "Features",
-                "LATENCY": "Latency"
+                "FEATURES": "Modules",
+                "LATENCY": "Sync"
             },
-            "DESC": "Comprehensive enterprise resource planning platform designed to operate in low-connectivity environments. Implements a custom bidirectional synchronization engine ensuring data integrity between branches and the cloud.",
-            "CTA": "View Architecture / Demo"
+            "DESC": "More than an ERP, it's a resilient management ecosystem. Designed to operate in critical offline environments, ensuring your business never stops. Hybrid architecture that automatically syncs when the network recovers.",
+            "CTA_DEMO": "View Live Demo",
+            "CTA_ACCESS": "Request Access",
+            "ACCESS_MSG": "This is a protected commercial product. To obtain access credentials or a guided demo, please contact me via LinkedIn."
+        },
+        "GHOSTCUT": {
+            "TITLE": "GhostCut: AI Editing",
+            "DESC": "Professional web tool for bulk image processing. Remove backgrounds with AI, crop, and compress locally in the browser. Total privacy: your photos never leave your device.",
+            "CTA_DEMO": "Try GhostCut",
+            "CTA_REPO": "Source Code"
+        },
+        "PELUQUERIA": {
+            "TAG": "HIGH PERFORMANCE WEBSITE • SEO & SALES",
+            "TITLE": "Petit Salon: Max Conversion",
+            "METRICS": {
+                "SEO": "Top 1 Google",
+                "CONVERSION": "+40% Sales",
+                "PERFORMANCE": "100/100"
+            },
+            "DESC": "Web platform strategically designed for SEO positioning and customer acquisition. Impeccable 'Mobile-First' design and load optimization that guarantees user retention and increases bookings.",
+            "CTA_DEMO": "Visit Site",
+            "CTA_REPO": "Source Code"
         },
         "SELECTED": {
-            "TITLE": "Other High-Impact Projects"
+            "TITLE": "Other Technical Projects"
         },
         "CARD_1": {
-            "TITLE": "Dental Practice Management System",
-            "DESC": "Comprehensive clinical platform featuring OAuth 2.0, auth, RBAC role management, and MercadoPago integration. Includes an intelligent chatbot and admin dashboard with real-time reporting."
-        },
-        "CARD_2": {
-            "TITLE": "Petit Salon - Digital Experience",
-            "DESC": "Conversion-focused UX/UI design and frontend development. Digital brand strategy with Google Analytics integration and Core Web Vitals optimization."
-        },
-        "CARD_3": {
-            "TITLE": "Microservices Architecture",
-            "DESC": "Distributed system design for high scalability, implementing asynchronous communication patterns and centralized gateways."
+            "TITLE": "SAS Medical - Excellence Practice",
+            "DESC": "Comprehensive clinical management system designed for modern dental practices. Complete patient management, appointments, digital clinical records, billing, and performance analytics in one professional platform.",
+            "TAG": "SAAS PRODUCT • CLINICAL MANAGEMENT",
+            "CTA_DEMO": "View Demo",
+            "CTA_INFO": "Access Info",
+            "INFO_MSG": "You can register manually or use Google Login. Note: The backend is free, so the first login may take up to 30 seconds to 'wake up' the server.",
+            "FEATURES": {
+                "AGENDA": {
+                    "TITLE": "Smart Scheduling",
+                    "DESC": "Appointment system with automatic email reminders, waiting list management, and schedule optimization to maximize practice productivity."
+                },
+                "PATIENTS": {
+                    "TITLE": "Patient Management",
+                    "DESC": "Complete digital clinical records, treatment tracking, interactive odontograms, and detailed monitoring for each patient."
+                },
+                "BILLING": {
+                    "TITLE": "Billing & Reports",
+                    "DESC": "Payment control, budgets, insurance management, and real-time metrics dashboard for performance and billing analysis."
+                }
+            }
         }
     },
     "EDUCATION": {

@@ -20,6 +20,8 @@ export class NavbarComponent {
     { label: 'NAV.HOME', fragment: 'home' },
     { label: 'NAV.ABOUT', fragment: 'about' },
     { label: 'NAV.PROJECTS', fragment: 'projects' },
+    { label: 'NAV.EDUCATION', fragment: 'education' },
+    { label: 'NAV.TESTIMONIALS', fragment: 'endorsements' },
     { label: 'NAV.CONTACT', fragment: 'contact' }
   ];
 

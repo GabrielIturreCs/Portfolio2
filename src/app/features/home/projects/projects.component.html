@@ -77,15 +77,48 @@
                     </div>
 
                     <!-- CTA -->
-                    <div class="pt-4">
-                        <a href="#"
-                            class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25">
-                            {{ 'PROJECTS.SUDO.CTA' | translate }}
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="pt-4 flex gap-4">
+                        <a href="https://frontend-vtbw.onrender.com/" target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 group">
+                            {{ 'PROJECTS.SUDO.CTA_DEMO' | translate }}
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                </path>
                             </svg>
                         </a>
+
+                        <!-- Sudo Request Access Button with Tooltip -->
+                        <div class="relative group/tooltip">
+                            <button
+                                class="inline-flex items-center gap-2 px-6 py-3 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-xl font-semibold transition-all duration-300 hover:bg-slate-300 dark:hover:bg-slate-700 cursor-help">
+                                {{ 'PROJECTS.SUDO.CTA_ACCESS' | translate }}
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <!-- Tooltip -->
+                            <div
+                                class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64 p-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm rounded-xl shadow-xl opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-300 z-50 text-center">
+                                <p class="mb-3">{{ 'PROJECTS.SUDO.ACCESS_MSG' | translate }}</p>
+                                <a href="https://www.linkedin.com/in/gabriel-iturre-308006246/" target="_blank"
+                                    class="inline-flex items-center gap-1 text-primary-500 font-bold hover:underline">
+                                    <span>LinkedIn</span>
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                                <!-- Arrow -->
+                                <div
+                                    class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-slate-900 dark:border-t-white">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -109,14 +142,14 @@
                             </div>
                             <!-- Carousel Controls -->
                             <div class="flex gap-2">
-                                <button (click)="prevImage()"
+                                <button (click)="prevSudoImage()"
                                     class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M15 19l-7-7 7-7"></path>
                                     </svg>
                                 </button>
-                                <button (click)="nextImage()"
+                                <button (click)="nextSudoImage()"
                                     class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -129,7 +162,7 @@
                         <div
                             class="aspect-[16/10] bg-slate-900 relative overflow-hidden group flex items-center justify-center">
                             <!-- Using object-contain to ensure the full image is visible without cropping -->
-                            <img [src]="currentImage" alt="SUDO ERP Dashboard"
+                            <img [src]="currentSudoImage" alt="SUDO ERP Dashboard"
                                 class="w-full h-full object-contain transition-opacity duration-500">
                         </div>
                     </div>
@@ -145,33 +178,79 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Project Card 1: Sistema Odontológico -->
+                <!-- Project Card 1: GhostCut (NEW) -->
                 <div
                     class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                        <img src="assets/images/t2.PNG" alt="Sistema Odontológico"
+                    <div
+                        class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center group/image">
+                        <img [src]="currentGhostCutImage" alt="GhostCut"
                             class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent">
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <div
+                            class="absolute inset-0 flex items-center justify-between px-2 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+                            <button (click)="prevGhostCutImage(); $event.stopPropagation()"
+                                class="p-1 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button (click)="nextGhostCutImage(); $event.stopPropagation()"
+                                class="p-1 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <div class="p-6">
-                        <h4
-                            class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                            {{ 'PROJECTS.CARD_1.TITLE' | translate }}
-                        </h4>
+                        <div class="flex justify-between items-start mb-2">
+                            <h4
+                                class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                {{ 'PROJECTS.GHOSTCUT.TITLE' | translate }}
+                            </h4>
+                            <span
+                                class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
+                                AI Tool
+                            </span>
+                        </div>
+
                         <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-3">
-                            {{ 'PROJECTS.CARD_1.DESC' | translate }}
+                            {{ 'PROJECTS.GHOSTCUT.DESC' | translate }}
                         </p>
                         <!-- Tech Stack -->
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex flex-wrap gap-2 mt-4 mb-4">
                             <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400">Angular</span>
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">AI</span>
                             <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">Node.js</span>
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">WebP</span>
                             <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">MongoDB</span>
-                            <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">OAuth
-                                2.0</span>
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">Privacy</span>
+                        </div>
+                        <!-- Links -->
+                        <div class="flex gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                            <a href="https://ghostcut.netlify.app/" target="_blank"
+                                class="flex items-center gap-1 text-sm font-semibold text-primary-600 dark:text-primary-400 hover:underline">
+                                {{ 'PROJECTS.GHOSTCUT.CTA_DEMO' | translate }}
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/GabrielIturreCs/Hacela-corta" target="_blank"
+                                class="flex items-center gap-1 text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200">
+                                {{ 'PROJECTS.GHOSTCUT.CTA_REPO' | translate }}
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+                                    </path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -179,55 +258,153 @@
                 <!-- Project Card 2: Peluquería Petit -->
                 <div
                     class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                        <img src="assets/images/t3.PNG" alt="Peluquería Petit"
+                    <div
+                        class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center group/image">
+                        <img [src]="currentPeluqueriaImage" alt="Peluquería Petit"
                             class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent">
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <div
+                            class="absolute inset-0 flex items-center justify-between px-2 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+                            <button (click)="prevPeluqueriaImage(); $event.stopPropagation()"
+                                class="p-1 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button (click)="nextPeluqueriaImage(); $event.stopPropagation()"
+                                class="p-1 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <div class="p-6">
-                        <h4
-                            class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                            {{ 'PROJECTS.CARD_2.TITLE' | translate }}
-                        </h4>
+                        <div class="flex justify-between items-start mb-2">
+                            <h4
+                                class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                {{ 'PROJECTS.PELUQUERIA.TITLE' | translate }}
+                            </h4>
+                            <span
+                                class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400">
+                                Product
+                            </span>
+                        </div>
                         <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-3">
-                            {{ 'PROJECTS.CARD_2.DESC' | translate }}
+                            {{ 'PROJECTS.PELUQUERIA.DESC' | translate }}
                         </p>
                         <!-- Tech Stack -->
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex flex-wrap gap-2 mt-4 mb-4">
                             <span
                                 class="px-2 py-1 text-xs font-medium rounded-md bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400">HTML/CSS</span>
                             <span
                                 class="px-2 py-1 text-xs font-medium rounded-md bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">Bootstrap</span>
                             <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400">Figma</span>
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400">SEO</span>
+                        </div>
+                        <!-- Links -->
+                        <div class="flex gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                            <a href="https://main--peluqueriapetit.netlify.app/" target="_blank"
+                                class="flex items-center gap-1 text-sm font-semibold text-primary-600 dark:text-primary-400 hover:underline">
+                                {{ 'PROJECTS.PELUQUERIA.CTA_DEMO' | translate }}
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                    </path>
+                                </svg>
+                            </a>
+                            <span
+                                class="flex items-center gap-1 text-sm font-semibold text-slate-400 cursor-not-allowed"
+                                title="Private">
+                                {{ 'PROJECTS.PELUQUERIA.CTA_REPO' | translate }}
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                    </path>
+                                </svg>
+                            </span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project Card 3: Microservices (Generic) -->
+                <!-- Project Card 3: Sistema Odontológico -->
                 <div
                     class="group relative bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                        <img src="assets/images/t4.PNG" alt="Microservices"
+                    <div
+                        class="aspect-video bg-slate-900 relative overflow-hidden flex items-center justify-center group/image">
+                        <img [src]="currentDentalImage" alt="Sistema Odontológico"
                             class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent">
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <div
+                            class="absolute inset-0 flex items-center justify-between px-2 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+                            <button (click)="prevDentalImage(); $event.stopPropagation()"
+                                class="p-1 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button (click)="nextDentalImage(); $event.stopPropagation()"
+                                class="p-1 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <div class="p-6">
-                        <h4
-                            class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                            {{ 'PROJECTS.CARD_3.TITLE' | translate }}
-                        </h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-3">
-                            {{ 'PROJECTS.CARD_3.DESC' | translate }}
-                        </p>
-                        <!-- Tech Stack -->
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4
+                                class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                {{ 'PROJECTS.CARD_1.TITLE' | translate }}
+                            </h4>
                             <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400">Docker</span>
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">MongoDB</span>
                             <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">Kubernetes</span>
-                            <span
-                                class="px-2 py-1 text-xs font-medium rounded-md bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">gRPC</span>
+                                class="px-2 py-1 text-xs font-medium rounded-md bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">OAuth
+                                2.0</span>
+                        </div>
+                        <!-- Links -->
+                        <div class="flex gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                            <a href="https://sistemaconsultoriofrontend.onrender.com/login" target="_blank"
+                                class="flex items-center gap-1 text-sm font-semibold text-primary-600 dark:text-primary-400 hover:underline">
+                                {{ 'PROJECTS.CARD_1.CTA_DEMO' | translate }}
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- Info Tooltip -->
+                            <div class="relative group/tooltip">
+                                <button
+                                    class="flex items-center gap-1 text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-help">
+                                    {{ 'PROJECTS.CARD_1.CTA_INFO' | translate }}
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </button>
+                                <!-- Tooltip Content -->
+                                <div
+                                    class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64 p-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm rounded-xl shadow-xl opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-300 z-50 text-center">
+                                    <p class="mb-2">{{ 'PROJECTS.CARD_1.INFO_MSG' | translate }}</p>
+                                    <!-- Arrow -->
+                                    <div
+                                        class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-slate-900 dark:border-t-white">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
