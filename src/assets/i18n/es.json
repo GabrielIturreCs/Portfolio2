@@ -163,6 +163,22 @@
         "SUBMIT": "Publicar Recomendación",
         "SUBMITTING": "Publicando..."
     },
+    "WHY_CHOOSE": {
+        "TITLE": "¿Por qué elegir Gabriel Iturre Development?",
+        "SUBTITLE": "No somos una consultora burocrática. Somos una unidad de ingeniería ágil enfocada en resultados técnicos superiores.",
+        "CARD_1": {
+            "TITLE": "Tecnología 2025",
+            "DESC": "Mientras otros usan Java viejo o PHP, nosotros usamos el stack de las Fortune 500: Angular 18, Node, Cloud & Signals."
+        },
+        "CARD_2": {
+            "TITLE": "Trato Directo con el Ingeniero",
+            "DESC": "Sin vendedores que prometen imposibles. Hablás directo con el arquitecto de software que construye tu solución."
+        },
+        "CARD_3": {
+            "TITLE": "Velocidad & UX",
+            "DESC": "No entregamos 'pantallas grises'. Creamos interfaces intuitivas que tus empleados aprenderán a usar en 15 minutos."
+        }
+    },
     "FOOTER": {
         "COPYRIGHT": "© {{year}} Gabriel Iturre. Todos los derechos reservados.",
         "SEO_LINK": "Desarrollo de Software en Palpalá, Jujuy , Argentina"

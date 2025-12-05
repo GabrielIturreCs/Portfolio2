@@ -1,19 +1,22 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-soluciones',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, TranslateModule],
     templateUrl: './soluciones.component.html',
     styleUrls: ['./soluciones.component.css']
 })
 export class SolucionesComponent implements OnInit {
     showBubble = true;
+    showPricing = false; // Add state for pricing visibility
     faqOpen = [false, false, false, false];
     phoneNumber = '543884472423';
 
     faqs = [
+
         { q: "¿Dónde está ubicada la agencia?", a: "Nuestra base operativa está en Palpalá, Jujuy. Brindamos atención presencial en toda la provincia y soporte remoto global." },
         { q: "¿Qué incluye el sistema SUDO ERP?", a: "SUDO es un ecosistema completo: Control de Stock, Facturación AFIP, Punto de Venta (POS), App Móvil y Reportes Financieros en tiempo real." },
         { q: "¿Hacen Factura A?", a: "Sí, somos una agencia registrada. Emitimos Factura A y B. Todos nuestros desarrollos cuentan con garantía oficial por contrato." },
@@ -29,6 +32,14 @@ export class SolucionesComponent implements OnInit {
 
     toggleFaq(index: number) { this.faqOpen[index] = !this.faqOpen[index]; }
     toggleBubble() { this.showBubble = !this.showBubble; }
+
+    revealPricing() {
+        this.showPricing = true;
+        setTimeout(() => {
+            this.scrollTo('planes');
+        }, 100);
+    }
+
     scrollTo(id: string) { this.document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 
     openWhatsApp() {

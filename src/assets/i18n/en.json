@@ -163,6 +163,22 @@
         "SUBMIT": "Submit Endorsement",
         "SUBMITTING": "Publishing..."
     },
+    "WHY_CHOOSE": {
+        "TITLE": "Why Choose Gabriel Iturre Development?",
+        "SUBTITLE": "We are not a bureaucratic agency. We are an agile engineering unit focused on superior technical results.",
+        "CARD_1": {
+            "TITLE": "Technology 2025",
+            "DESC": "While others use old Java or PHP, we use the Fortune 500 stack: Angular 18, Node, Cloud & Signals."
+        },
+        "CARD_2": {
+            "TITLE": "Direct Engineer Access",
+            "DESC": "No salespeople promising the impossible. You talk directly with the software architect building your solution."
+        },
+        "CARD_3": {
+            "TITLE": "Speed & UX",
+            "DESC": "We don't deliver 'grey screens'. We create intuitive interfaces your employees will learn in 15 minutes."
+        }
+    },
     "FOOTER": {
         "COPYRIGHT": "© {{year}} Gabriel Iturre. All rights reserved.",
         "SEO_LINK": "Software Development in Palpalá, Jujuy, Argentina"

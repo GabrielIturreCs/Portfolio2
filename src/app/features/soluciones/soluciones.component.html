@@ -205,14 +205,20 @@
                             El sistema definitivo para comercios en Palpalá y S.S. de Jujuy. Control de Stock,
                             Facturación Electrónica, Caja y Usuarios. Todo en la nube.
                         </p>
-                        <button (click)="openWhatsApp()"
-                            class="px-6 py-3 rounded-xl bg-white text-slate-900 font-bold hover:bg-indigo-50 transition-colors flex items-center gap-2 text-xs uppercase tracking-wider">
-                            Solicitar Demo
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </button>
+                        <div class="flex gap-3">
+                            <button (click)="revealPricing()"
+                                class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-bold hover:bg-indigo-500 transition-colors flex items-center gap-2 text-xs uppercase tracking-wider">
+                                Ver Planes
+                            </button>
+                            <button (click)="openWhatsApp()"
+                                class="px-6 py-3 rounded-xl bg-white text-slate-900 font-bold hover:bg-indigo-50 transition-colors flex items-center gap-2 text-xs uppercase tracking-wider">
+                                Solicitar Demo
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -303,8 +309,66 @@
         </div>
     </section>
 
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-24 relative z-10 bg-slate-900/30 border-t border-white/5 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 max-w-4xl mx-auto">
+                <span class="text-indigo-500 font-bold tracking-widest uppercase text-xs">Excellence Standards</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mt-4 mb-4">{{ 'WHY_CHOOSE.TITLE' | translate }}
+                </h2>
+                <p class="text-slate-400 text-lg">{{ 'WHY_CHOOSE.SUBTITLE' | translate }}</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Tech 2025 -->
+                <div
+                    class="bg-[#0a0f1c] border border-white/5 p-8 rounded-2xl hover:border-indigo-500/30 transition-all group hover:-translate-y-2">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 border border-indigo-500/20 group-hover:bg-indigo-500/20 transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">{{ 'WHY_CHOOSE.CARD_1.TITLE' | translate }}</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">{{ 'WHY_CHOOSE.CARD_1.DESC' | translate }}</p>
+                </div>
+
+                <!-- Card 2: Direct Access -->
+                <div
+                    class="bg-[#0a0f1c] border border-white/5 p-8 rounded-2xl hover:border-emerald-500/30 transition-all group hover:-translate-y-2">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">{{ 'WHY_CHOOSE.CARD_2.TITLE' | translate }}</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">{{ 'WHY_CHOOSE.CARD_2.DESC' | translate }}</p>
+                </div>
+
+                <!-- Card 3: Speed & UX -->
+                <div
+                    class="bg-[#0a0f1c] border border-white/5 p-8 rounded-2xl hover:border-pink-500/30 transition-all group hover:-translate-y-2">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 mb-6 border border-pink-500/20 group-hover:bg-pink-500/20 transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">{{ 'WHY_CHOOSE.CARD_3.TITLE' | translate }}</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">{{ 'WHY_CHOOSE.CARD_3.DESC' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PLANES Y PRECIOS -->
-    <section id="planes" class="py-24 relative z-10 bg-[#05080f] border-t border-white/5">
+    <section id="planes" class="py-24 relative z-10 bg-[#05080f] border-t border-white/5" *ngIf="showPricing">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <span class="text-indigo-500 font-bold tracking-widest uppercase text-xs">Precios Claros</span>
@@ -332,11 +396,14 @@
                         </div>
                         <ul class="space-y-3 mb-8 flex-1">
                             <li class="flex items-center gap-3 text-slate-300 text-xs"><span
-                                    class="text-green-400">✓</span> Licencia Software Nube</li>
+                                    class="text-green-400">✓</span>
+                                Licencia Software Nube</li>
                             <li class="flex items-center gap-3 text-slate-300 text-xs"><span
-                                    class="text-green-400">✓</span> App Móvil Control</li>
+                                    class="text-green-400">✓</span>
+                                App Móvil Control</li>
                             <li class="flex items-center gap-3 text-slate-300 text-xs"><span
-                                    class="text-green-400">✓</span> Soporte WhatsApp</li>
+                                    class="text-green-400">✓</span>
+                                Soporte WhatsApp</li>
                         </ul>
                         <button (click)="openWhatsApp()"
                             class="w-full py-3 rounded-xl border border-slate-700 text-white font-bold hover:bg-slate-800 transition-all text-xs uppercase tracking-wider">Elegir
@@ -430,12 +497,16 @@
 
                         <ul class="space-y-3 mb-8 flex-1">
                             <li class="flex items-center gap-3 text-white text-xs"><span
-                                    class="text-yellow-500">✓</span> <strong>Licencia Eterna (Sin Pagos
-                                    Mensuales)</strong></li>
+                                    class="text-yellow-500">✓</span>
+                                <strong>Licencia Eterna (Sin Pagos
+                                    Mensuales)</strong>
+                            </li>
                             <li class="flex items-center gap-3 text-white text-xs"><span
-                                    class="text-yellow-500">✓</span> Hardware Incluido (Impresora + Scanner)</li>
+                                    class="text-yellow-500">✓</span>
+                                Hardware Incluido (Impresora + Scanner)</li>
                             <li class="flex items-center gap-3 text-white text-xs"><span
-                                    class="text-yellow-500">✓</span> Instalación en tu Local</li>
+                                    class="text-yellow-500">✓</span>
+                                Instalación en tu Local</li>
                         </ul>
                         <button (click)="openWhatsApp()"
                             class="w-full py-4 rounded-xl bg-gradient-to-r from-yellow-600 to-orange-600 text-white font-black hover:from-yellow-500 hover:to-orange-500 transition-all shadow-lg text-xs uppercase tracking-wider">Lo
