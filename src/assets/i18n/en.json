@@ -139,7 +139,7 @@
         "SUBTITLE": "I am available to discuss Full Stack Engineering opportunities, system architecture, or technical consulting. Have a complex challenge? Let's talk.",
         "COPY": "Copy Email",
         "COPIED": "Copied!",
-        "LOCATION": "Jujuy, Argentina (Remote Ready)",
+        "LOCATION": "Palpalá , Jujuy, Argentina (Remote Ready)",
         "FORM": {
             "NAME": "Full Name",
             "EMAIL": "Email Address",
@@ -162,5 +162,9 @@
         "LABEL_MESSAGE": "Message",
         "SUBMIT": "Submit Endorsement",
         "SUBMITTING": "Publishing..."
+    },
+    "FOOTER": {
+        "COPYRIGHT": "© {{year}} Gabriel Iturre. All rights reserved.",
+        "SEO_LINK": "Software Development in Palpalá, Jujuy, Argentina"
     }
 }

@@ -12,7 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ProjectsComponent {
     // Sudo ERP Images
     sudoImages: string[] = [
-        'assets/images/t7.PNG',
+        'assets/images/sistema-gestion-sudo-erp-palpala.png',
         'assets/images/t10.PNG',
         'assets/images/t11.PNG',
         'assets/images/t9.PNG'
@@ -21,7 +21,7 @@ export class ProjectsComponent {
 
     // GhostCut Images
     ghostCutImages: string[] = [
-        'assets/images/ghostcut_ghostcut.webp',
+        'assets/images/desarrollo-software-ia-jujuy.webp',
         'assets/images/ghostcut2_ghostcut.webp',
         'assets/images/ghostcut3_ghostcut.webp'
     ];

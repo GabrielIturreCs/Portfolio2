@@ -139,7 +139,7 @@
         "SUBTITLE": "Estoy disponible para discutir oportunidades de Ingeniería Full Stack, arquitectura de sistemas o consultoría técnica. ¿Tienes un desafío complejo? Hablemos.",
         "COPY": "Copiar Email",
         "COPIED": "¡Copiado!",
-        "LOCATION": "Jujuy, Argentina (Listo para Remoto)",
+        "LOCATION": "Palpalá, Jujuy, Argentina (Listo para Remoto)",
         "FORM": {
             "NAME": "Nombre Completo",
             "EMAIL": "Correo Electrónico",
@@ -162,5 +162,9 @@
         "LABEL_MESSAGE": "Mensaje",
         "SUBMIT": "Publicar Recomendación",
         "SUBMITTING": "Publicando..."
+    },
+    "FOOTER": {
+        "COPYRIGHT": "© {{year}} Gabriel Iturre. Todos los derechos reservados.",
+        "SEO_LINK": "Desarrollo de Software en Palpalá, Jujuy , Argentina"
     }
 }
